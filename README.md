@@ -3,7 +3,7 @@
 This project consists of three implementations of MCTS agents in a reinforcement learning 
 context. 
 
-Our presentation can be found at the [here](https://docs.google.com/presentation/d/1Hr9rWROJK0cbpJSw84OBIwv4QQP5CkCYjcoN2OVs6NQ/edit?usp=sharing)
+Our 5 minutepresentation can be found [here](https://docs.google.com/presentation/d/1Hr9rWROJK0cbpJSw84OBIwv4QQP5CkCYjcoN2OVs6NQ/edit?usp=sharing)
 
 
 ## TicTacToe Game
