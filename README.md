@@ -27,8 +27,8 @@ An example of our MCTS agent performing on a series of level 6 roadway environme
 
 ## Authors:
 
-Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgill.ca [github](http://github.com/johannah)
+Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgill.ca | [github/johannah](http://github.com/johannah)
 
-Kyle Kastner | McGill Student ID:  | email: kastnerkyle@gmail.com [github](http://github.com/kastnerkyle)
+Kyle Kastner | McGill Student ID:  | email: kastnerkyle@gmail.com | [github/kastnerkyle](http://github.com/kastnerkyle)
 
-Bobak Hamed-Baghi | McGill Student ID: | email:  [github](http://github.com/GamerAlien)
+Bobak Hamed-Baghi | McGill Student ID: | email: bobak.hamed-baghi@mail.mcgill.ca |  [github/GamerAlien](http://github.com/GamerAlien)
