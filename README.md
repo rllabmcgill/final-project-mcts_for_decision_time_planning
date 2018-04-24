@@ -24,11 +24,13 @@ An example of our MCTS agent performing on a series of level 6 roadway environme
 ## Counterpoint Generation Task
 [counterpoint](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/README.md)
 
+![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
+
 
 ## Authors:
 
-Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgill.ca | [github/johannah](http://github.com/johannah)
+Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgill.ca | [@johannah](http://github.com/johannah)
 
-Kyle Kastner | McGill Student ID:  | email: kastnerkyle@gmail.com | [github/kastnerkyle](http://github.com/kastnerkyle)
+Kyle Kastner | McGill Student ID:  | email: kastnerkyle@gmail.com | [@kastnerkyle](http://github.com/kastnerkyle)
 
-Bobak Hamed-Baghi | McGill Student ID: | email: bobak.hamed-baghi@mail.mcgill.ca |  [github/GamerAlien](http://github.com/GamerAlien)
+Bobak Hamed-Baghi | McGill Student ID: | email: bobak.hamed-baghi@mail.mcgill.ca |  [@GamerAlien](http://github.com/GamerAlien)
