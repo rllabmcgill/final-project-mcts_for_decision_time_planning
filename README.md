@@ -4,17 +4,17 @@ This project consists of three implementations of MCTS agents in a reinforcement
 
 Our 5 minute presentation can be found on [google drive](https://docs.google.com/presentation/d/1Hr9rWROJK0cbpJSw84OBIwv4QQP5CkCYjcoN2OVs6NQ/edit?usp=sharing)
 
-## [Navigation](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/README.md)
+### [Navigation](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/README.md)
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/multi_episode.gif)
 
-## [Counterpoint](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/README.md)
+### [Counterpoint](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/README.md)
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
 
-## [TicTacToe Game](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
+### [TicTacToe Game](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
 
-## Authors:
+### Authors:
 
 Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgill.ca | [@johannah](http://github.com/johannah)
 
