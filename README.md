@@ -13,9 +13,6 @@ Our 5 minutepresentation can be found [here](https://docs.google.com/presentatio
 
 [navigation](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/README.md)
 
-An example of our MCTS agent performing on level 6 of the roadway environment using vq-vae to represent the roadway state with the rollouts shown.
-![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/seed_353_reward_10_gap_5.gif)
-
 An example of our MCTS agent performing on a series of level 6 roadway environments using vq-vae to represent the roadway state.
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/multi_episode.gif)
