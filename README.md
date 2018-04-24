@@ -1,28 +1,18 @@
 # MCTS for Decision Time Planning
 
-This project consists of three implementations of MCTS agents in a reinforcement learning 
-context. 
+This project consists of three implementations of MCTS agents in a reinforcement learning context. 
 
-Our 5 minutepresentation can be found [here](https://docs.google.com/presentation/d/1Hr9rWROJK0cbpJSw84OBIwv4QQP5CkCYjcoN2OVs6NQ/edit?usp=sharing)
+Our 5 minute presentation can be found on [google drive](https://docs.google.com/presentation/d/1Hr9rWROJK0cbpJSw84OBIwv4QQP5CkCYjcoN2OVs6NQ/edit?usp=sharing)
 
-
-## TicTacToe Game
-[tictactoe](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
-
-## Navigation Task
-
-[navigation](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/README.md)
-
-An example of our MCTS agent performing on a series of level 6 roadway environments using vq-vae to represent the roadway state.
+## [Navigation](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/README.md)
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/multi_episode.gif)
 
- 
-## Counterpoint Generation Task
-[counterpoint](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/README.md)
+## [Counterpoint](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/README.md)
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
 
+## [TicTacToe Game](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
 
 ## Authors:
 
