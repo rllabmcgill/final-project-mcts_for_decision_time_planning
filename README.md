@@ -12,7 +12,7 @@ Our 5 minute presentation can be found on [google drive](https://docs.google.com
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
 
-### [TicTacToe Game](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
+### [TicTacToe and Ski ](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
 
 ### Authors:
 
@@ -20,4 +20,4 @@ Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgil
 
 Kyle Kastner | McGill Student ID:  | email: kastnerkyle@gmail.com | [@kastnerkyle](http://github.com/kastnerkyle)
 
-Bobak Hamed-Baghi | McGill Student ID: | email: bobak.hamed-baghi@mail.mcgill.ca |  [@GamerAlien](http://github.com/GamerAlien)
+Bobak Hamed-Baghi | McGill Student ID: 260638423| email: bobak.hamed-baghi@mail.mcgill.ca |  [@GamerAlien](http://github.com/GamerAlien)
