@@ -14,7 +14,7 @@ See trace_0.wav for an example rendering, using Timidity. All .mid and .ly files
 
 For viewing .ly files, in Linux lilypond is usually used, the pdf output can be created using `lilypond file.ly`. .mid files require a midi player, in Linux timidity is a common choice. After installing timidity, the audio can be heard using `timidity file.mid`.
 
-To run the code (tested in Python 2.7), do `python three_voice_pucts_mcts.py`. This will begin running the planning algorithm against each cantus firmus from the set of species 1 examples from the book.
+To run the code (tested in Python 2.7), do `python three_voice_pucts_mcts.py`. This will begin running the planning algorithm against each cantus firmus from the set of three voice, species 1 examples from the book. After completing all of these traces, it will write out lilypond (.ly) files and midi files (.mid) showing the results
 
 ## Authors:
 Kyle Kastner | email: kastnerkyle@gmail.com | [@kastnerkyle](http://github.com/kastnerkyle/)
