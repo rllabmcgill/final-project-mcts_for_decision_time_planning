@@ -1,17 +1,26 @@
-# Trajectories 
-Use PUCT MCTS to find trajectories through a busy road. Road state can be modeled 
-with a vq-vae representation. An example implementation is found in: 
-[roadway_vqvae.py](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/examples/roadway_vqvae.py)
+# Probabilistic MCTS for navigating to a goal in a dangerous environment
 
-Repo with latest code can be found in:
-https://github.com/johannah/trajectories
+An agent (green) uses MCTS to find trajectories through a busy road with random initialization and goal points (yellow cross).
 
-An example of our MCTS agent performing on level 6 of the roadway environment using vq-vae to represent the roadway state with the rollouts shown.
-![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/seed_353_reward_10_gap_5.gif)
+Example code:
+[roadway_modelpy](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/examples/roadway_model.py)
 
-An example of our MCTS agent performing on a series of level 6 roadway environments using vq-vae to represent the roadway state.
+This repo will not be updated after May 2018, please refer to the living repo here:
+[https://github.com/johannah/trajectories](https://github.com/johannah/trajectories)
 
-![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/multi_episode.gif)
+We learned a model of the environment using a vqvae and perform one-step ahead rollouts using this model. 
+
+![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/true_step_seed_930_vqvae.gif)
+
+![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/playout_step_seed_930_vqvae.gif)
+
+
+We learned a model of the environment using a vae and perform one-step ahead rollouts using this model. 
+
+![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/true_step_seed_930_vae.gif)
+
+![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/playout_step_seed_930_vae.gif)
+
 
 ## Authors:
 Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgill.ca

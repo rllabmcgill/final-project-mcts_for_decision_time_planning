@@ -12,7 +12,7 @@ Our 5 minute presentation can be found on [google drive](https://docs.google.com
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
 
-### [TicTacToe Game](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
+### [Atari Ski (RAM)](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/ski/README.md)
 
 ### Authors:
 
