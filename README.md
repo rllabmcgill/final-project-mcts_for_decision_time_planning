@@ -4,13 +4,13 @@ This project consists of three implementations of MCTS agents in a reinforcement
 
 Our 5 minute presentation can be found on [google drive](https://docs.google.com/presentation/d/1Hr9rWROJK0cbpJSw84OBIwv4QQP5CkCYjcoN2OVs6NQ/edit?usp=sharing)
 
-### [Navigation](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/README.md)
+### [Navigation](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/trajectories/README.md)
 
-![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/trajectories/multi_episode.gif)
+![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/trajectories/imgs/multi_episode.gif)
 
-### [Counterpoint](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/README.md)
+### [Counterpoint](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/README.md)
 
-![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
+![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
 
 ### [TicTacToe and Ski ](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/ski_game_and_tictactoe/README.md)
 
