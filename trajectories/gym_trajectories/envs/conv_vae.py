@@ -8,7 +8,7 @@ from torchvision import transforms
 import torch.optim as optim
 from torch import nn
 import matplotlib.pyplot as plt
-
+from IPython import embed
 
 class Normal(object):
     def __init__(self, mu, sigma, log_sigma, v=None, r=None):
@@ -25,34 +25,79 @@ class Normal(object):
 
 
 class Encoder(torch.nn.Module):
-    def __init__(self, D_in, D_out):
+    def __init__(self, encoder_output_size):
         super(Encoder, self).__init__()
         # make encoder one layer bigger then decoder - kk
-        self.dout = D_out
-        self.linear1 = torch.nn.Linear(D_in, 1024)
-        self.linear2 = torch.nn.Linear(1024, 512)
-        self.linear3 = torch.nn.Linear(512, 256)
-        self.linear4 = torch.nn.Linear(256, self.dout)
+        self.encoder_output_size = encoder_output_size
+        self.encoder = nn.Sequential(
+            nn.Conv2d(in_channels=1, out_channels=16,
+                      kernel_size=4, stride=2, padding=1),
+            nn.BatchNorm2d(16),
+            nn.ReLU(True),
+            nn.Conv2d(in_channels=16, out_channels=32,
+                      kernel_size=4,
+                      stride=2, padding=1),
+            nn.BatchNorm2d(32),
+            nn.ReLU(True),
+            nn.Conv2d(in_channels=32, out_channels=48,
+                      kernel_size=4,
+                      stride=2, padding=1),
+            nn.BatchNorm2d(48),
+            nn.ReLU(True),
+            nn.Conv2d(in_channels=48, out_channels=self.encoder_output_size,
+                      kernel_size=1,
+                      stride=1, padding=0),
+            nn.BatchNorm2d(self.encoder_output_size),
+        )
+        #self.linear1 = torch.nn.Linear(D_in, 1024)
+        #self.linear2 = torch.nn.Linear(1024, 512)
+        #self.linear3 = torch.nn.Linear(512, 256)
+        #self.linear4 = torch.nn.Linear(256, self.dout)
 
     def forward(self, x):
-        x = F.relu(self.linear1(x))
-        x = F.relu(self.linear2(x))
-        x = F.relu(self.linear3(x))
-        return F.relu(self.linear4(x))
+        return self.encoder(x)
+        #x = F.relu(self.linear1(x))
+        #x = F.relu(self.linear2(x))
+        #x = F.relu(self.linear3(x))
+        #return F.relu(self.linear4(x))
 
 
 class Decoder(torch.nn.Module):
-    def __init__(self, D_in, D_out):
+    def __init__(self, latent_size, D_out):
         super(Decoder, self).__init__()
-        self.latent_dim = D_in
-        self.linear1 = torch.nn.Linear(self.latent_dim, 512)
-        self.linear2 = torch.nn.Linear(512, 1024)
-        self.linear3 = torch.nn.Linear(1024, D_out)
+        #self.linear1 = torch.nn.Linear(self.latent_dim, 512)
+        #self.linear2 = torch.nn.Linear(512, 1024)
+        #self.linear3 = torch.nn.Linear(1024, D_out)
+        self.latent_size = latent_size
+        self.decoder = nn.Sequential(
+            nn.Conv2d(in_channels=latent_size, out_channels=48,
+                      kernel_size=1,
+                      stride=1, padding=0),
+            nn.BatchNorm2d(48),
+            nn.ReLU(True),
+            nn.ConvTranspose2d(in_channels=48,
+                               out_channels=32,
+                               kernel_size=4,
+                               stride=2, padding=1),
+            nn.BatchNorm2d(32),
+            nn.ReLU(True),
+            nn.ConvTranspose2d(in_channels=32,
+                               out_channels=16,
+                               kernel_size=4,
+                               stride=2, padding=1),
+
+            nn.BatchNorm2d(16),
+            nn.ReLU(True),
+            nn.ConvTranspose2d(in_channels=16, out_channels=D_out,
+                               kernel_size=4, stride=2, padding=1)
+        )
+
 
     def forward(self, x):
-        x = F.relu(self.linear1(x))
-        x = F.relu(self.linear2(x))
-        return F.relu(self.linear3(x))
+        return self.decoder(x)
+        #x = F.relu(self.linear1(x))
+        #x = F.relu(self.linear2(x))
+        #return F.relu(self.linear3(x))
 
 class VAE(torch.nn.Module):
 
@@ -61,14 +106,16 @@ class VAE(torch.nn.Module):
         self.encoder = encoder
         self.decoder = decoder
         self.use_cuda = use_cuda
+        self._enc_mu = torch.nn.Linear(800,800)
+        self._enc_log_sigma = torch.nn.Linear(800,800)
 
-        self._enc_mu = torch.nn.Linear(self.encoder.dout, self.decoder.latent_dim)
-        self._enc_log_sigma = torch.nn.Linear(self.encoder.dout, self.decoder.latent_dim)
 
-    def _sample_latent(self, h_enc):
+    def _sample_latent(self, sh_enc):
         """
         Return the latent normal sample z ~ N(mu, sigma^2)
         """
+        # flatten
+        h_enc = sh_enc.contiguous().view(sh_enc.shape[0], -1)
         mu = self._enc_mu(h_enc)
         log_sigma = self._enc_log_sigma(h_enc)
         sigma = torch.exp(log_sigma)
@@ -86,7 +133,9 @@ class VAE(torch.nn.Module):
     def forward(self, state):
         h_enc = self.encoder(state)
         z = self._sample_latent(h_enc)
-        return self.decoder(z)
+        # reshape to what it was before we went thorugh h_enc - should make vars
+        zs = z.contiguous().view(z.shape[0], 32, 5, 5)
+        return self.decoder(zs)
 
 
 def latent_loss(z_mean, z_stddev):

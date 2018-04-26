@@ -265,7 +265,7 @@ def run_trace(seed=3432, ysize=40, xsize=40, level=5, max_goal_distance=100,
     t = 0
     finished = False
     # draw initial state
-    true_env.render(state)
+    true_env.render(state,t)
     while not finished:
         ry,rx = true_env.get_robot_state(state)
         current_goal_distance = true_env.get_distance_to_goal()
@@ -278,7 +278,7 @@ def run_trace(seed=3432, ysize=40, xsize=40, level=5, max_goal_distance=100,
         et = time.time()
 
         next_state, reward, finished, _ = true_env.step(state, t, action)
-        true_env.render(next_state)
+        true_env.render(next_state,t)
 
         results['decision_ts'].append(et-st)
         results['dis_to_goal'].append(current_goal_distance)

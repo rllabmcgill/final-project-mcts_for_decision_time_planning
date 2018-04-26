@@ -46,13 +46,8 @@ class AutoEncoder(nn.Module):
                       kernel_size=4,
                       stride=2, padding=1),
             nn.BatchNorm2d(32),
-            nn.Conv2d(in_channels=32,
-                      out_channels=42,
-                      kernel_size=4,
-                      stride=2, padding=1),
-            nn.BatchNorm2d(42),
             nn.ReLU(True),
-            nn.Conv2d(in_channels=42,
+            nn.Conv2d(in_channels=32,
                       out_channels=encoder_output_size,
                       kernel_size=1,
                       stride=1, padding=0),
@@ -66,19 +61,14 @@ class AutoEncoder(nn.Module):
 
         self.decoder = nn.Sequential(
                 nn.Conv2d(in_channels=encoder_output_size,
-                          out_channels=42,
+                          out_channels=32,
                           kernel_size=1,
                           stride=1, padding=0),
-                nn.BatchNorm2d(42),
+                nn.BatchNorm2d(32),
                 nn.ReLU(True),
                 # applies a 2d transposed convolution operator over input image
                 # composed of several input planes. Can be seen as gradient of Conv2d
                 # with respsct to its input. also known as fractionally-strided conv.
-                nn.ConvTranspose2d(in_channels=42,
-                      out_channels=32,
-                      kernel_size=4,
-                      stride=2, padding=1),
-                nn.BatchNorm2d(32),
                 nn.ConvTranspose2d(in_channels=32,
                       out_channels=16,
                       kernel_size=4,
@@ -161,5 +151,3 @@ if __name__ == '__main__':
     assert (emb == model.embedding.weight.grad.data).all() is True
 
     print(loss1, loss2, loss3)
-
-
