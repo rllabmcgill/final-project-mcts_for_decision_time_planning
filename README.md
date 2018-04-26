@@ -10,7 +10,7 @@ Our 5 minute presentation can be found on [google drive](https://docs.google.com
 
 ### [Counterpoint](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/README.md)
 
-![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
+![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/trace_0.png)
 
 ### [TicTacToe and Ski ](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/ski_game_and_tictactoe/README.md)
 
