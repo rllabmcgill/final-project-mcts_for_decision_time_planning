@@ -1,3 +1,9 @@
+# Author: Kyle Kastner
+# License: BSD 3-Clause
+# http://mcts.ai/pubs/mcts-survey-master.pdf
+# See similar implementation here
+# https://github.com/junxiaosong/AlphaZero_Gomoku
+
 import numpy as np
 import copy
 import cPickle
