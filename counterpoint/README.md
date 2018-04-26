@@ -4,9 +4,9 @@ Use PUCT MCTS to find harmony according to a cantus firmus.
 Repo with latest code can be found in:
 [https://github.com/kastnerkyle/exploring_species_counterpoint](https://github.com/kastnerkyle/exploring_species_counterpoint)
 
-![alt_text](https://github.com/rllabmcgill/final-project-MCTS_function_approximation/blob/master/counterpoint/trace_0.png)
+![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/trace_0.png)
 
-![alt_text](https://github.com/rllabmcgill/final-project-MCTS_function_approximation/blob/master/counterpoint/trace_8.png)
+![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/trace_8.png)
 
 See trace_0.wav for an example rendering, using Timidity. All .mid and .ly files are included in saved_*
 
