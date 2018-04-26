@@ -18,6 +18,6 @@ Our 5 minute presentation can be found on [google drive](https://docs.google.com
 
 Johanna Hansen | McGill Student ID: 260704014 | email: johanna.hansen@mail.mcgill.ca | [@johannah](http://github.com/johannah)
 
-Kyle Kastner | McGill Student ID:  | email: kastnerkyle@gmail.com | [@kastnerkyle](http://github.com/kastnerkyle)
+Kyle Kastner | McGill Student ID: 260848108 | email: kastnerkyle@gmail.com | [@kastnerkyle](http://github.com/kastnerkyle)
 
 Bobak Hamed-Baghi | McGill Student ID: 260638423| email: bobak.hamed-baghi@mail.mcgill.ca |  [@GamerAlien](http://github.com/GamerAlien)
