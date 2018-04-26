@@ -12,7 +12,7 @@ Our 5 minute presentation can be found on [google drive](https://docs.google.com
 
 ![alt_text](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/counterpoint/three_voice_puct_mcts_plot_0.png)
 
-### [TicTacToe and Ski ](https://github.com/rllabmcgill/MCTS_function_approximation/blob/master/tictactoe/README.md)
+### [TicTacToe and Ski ](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/ski_game_and_tictactoe/README.md)
 
 ### Authors:
 
