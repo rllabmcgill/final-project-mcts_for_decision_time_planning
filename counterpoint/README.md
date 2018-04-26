@@ -21,7 +21,7 @@ Some of the renderings which go very low cause issues with midi players like tim
 
 The effect of pitch on perception of harmony is complex, but the pitches for rendering were chosen to be near the center of the scale. Adapting based on the chosen pitches is something we plan to do in the future (so it can sound a bit better). 
 
-For the exceptionally willing, changing the Timidity soundfonts to fluidsynth can sound a lot better than the standard timidity piano sound. I have some loose instructions in this link [http://kkjkok.blogspot.ca/2018/04/reconfiguring-timidity-for-different.html][http://kkjkok.blogspot.ca/2018/04/reconfiguring-timidity-for-different.html].
+For the exceptionally willing, changing the Timidity soundfonts to fluidsynth can sound a lot better than the standard timidity piano sound. I have some loose instructions in this link http://kkjkok.blogspot.ca/2018/04/reconfiguring-timidity-for-different.html.
 
 
 ## Authors:
