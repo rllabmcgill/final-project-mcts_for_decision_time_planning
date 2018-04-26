@@ -6,6 +6,9 @@ Rules and environment based on the book "The Study of Counterpoint", from Johann
 Repo with latest code can be found in:
 [https://github.com/kastnerkyle/exploring_species_counterpoint](https://github.com/kastnerkyle/exploring_species_counterpoint)
 
+This repo only shows 3 voice results, but the analysis code covers cases for 2 voice species counterpoint as well. 
+Three and four voice species counterpoint will be continued in `exploring species counterpoint` repo above.
+
 ![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/trace_0.png)
 
 ![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/trace_8.png)
