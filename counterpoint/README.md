@@ -10,7 +10,7 @@ Repo with latest code can be found in:
 
 ![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/counterpoint/trace_8.png)
 
-See trace_0.wav for an example rendering, using Timidity. All .mid and .ly files are included in saved_*
+See `trace_0.wav` for an example rendering, using Timidity. All .mid and .ly files are included in saved_*
 
 For viewing .ly files, in Linux lilypond is usually used, the pdf output can be created using `lilypond file.ly`. .mid files require a midi player, in Linux timidity is a common choice. After installing timidity, the audio can be heard using `timidity file.mid`.
 
