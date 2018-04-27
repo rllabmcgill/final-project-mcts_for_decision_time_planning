@@ -6,8 +6,10 @@ Rules and environment based on the book "The Study of Counterpoint", from Johann
 Repo with latest code can be found in:
 [https://github.com/kastnerkyle/exploring_species_counterpoint](https://github.com/kastnerkyle/exploring_species_counterpoint)
 
+# Link to Examples
 To hear the midi examples without installing packages or running locally, see http://kastnerkyle.github.io/posts/miditests/#example
 
+# Discussion
 This repo only shows 3 voice results, but the analysis code covers cases for 2 voice species counterpoint as well. 
 Three and four voice species counterpoint will be continued in `exploring species counterpoint` repo above.
 
