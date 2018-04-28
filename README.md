@@ -4,6 +4,8 @@ This project consists of three implementations of MCTS agents in a reinforcement
 
 Our 5 minute presentation can be found on [google drive](https://docs.google.com/presentation/d/1Hr9rWROJK0cbpJSw84OBIwv4QQP5CkCYjcoN2OVs6NQ/edit?usp=sharing)
 
+Our final report is available [here](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/final_report.pdf)
+
 ### [Navigation](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/trajectories/README.md)
 
 ![alt_text](https://github.com/rllabmcgill/final-project-mcts_for_decision_time_planning/blob/master/trajectories/imgs/multi_episode.gif)
